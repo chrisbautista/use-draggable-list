@@ -1,0 +1,60 @@
+.draggable-list {
+  display: flex;
+  .draggable-item-button {
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+
+    /*debug*/
+    min-width: 20rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.35rem;
+    color: #222;
+  }
+
+  [draggable] {
+    cursor: grab;
+  }
+
+  [draggable]:before,
+  [draggable="true"]:before {
+    content: "=";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .draggable-item-button:focus-visible {
+    outline: 4px dashed #1943d9;
+    background-color: #c7d2f5;
+  }
+
+  &.is-dragging {
+    .draggable-item-button {
+      &:focus-visible {
+        outline: 4px dashed #e41a2e;
+        background-color: #efc962;
+      }
+    }
+  }
+
+  & ul,
+  & li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 5px;
+
+    flex-direction: column;
+  }
+
+  li {
+    flex-basis: 100%;
+  }
+}
