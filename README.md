@@ -8,10 +8,21 @@
 - Lightweight
 - Customizable
 
-## Installation
+## To run example project
 
+1. Install dependencies.
 ```bash
 npm install
+```
+or 
+
+```bash
+yarn install
+```
+2. Run 
+
+```bash
+yarn run dev
 ```
 
 ## Usage
