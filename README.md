@@ -18,7 +18,7 @@ npm install
 
 ```jsx
 import React from 'react';
-import useDraggableList from 'use-draggable-list';
+import useDraggableList from './useDraggableList/useDraggableList';;
 
 const MyComponent = () => {
     const { items, handleDragStart, handleDragOver, handleDrop } = useDraggableList(initialItems);
