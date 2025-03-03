@@ -49,10 +49,13 @@ const MyComponent = () => {
 
 #### Returns
 
-- `items` (Array): The current list of items.
-- `handleDragStart` (Function): Function to handle the drag start event.
-- `handleDragOver` (Function): Function to handle the drag over event.
-- `handleDrop` (Function): Function to handle the drop event.
+- `listRef` (Object): A ref object to be attached to the list container.
+- `listAttributes` (Object): Attributes to be spread onto the list container.
+- `items` (Array): The current list of items, updated after drag-and-drop operations.
+- `listRootClassNames` (String): Class names to be applied to the list container.
+- `getListEventHandlers` (Function): A function that returns event handlers for the list container.
+- `getItemButtonEventHandlers` (Function): A function that returns event handlers for the draggable items.
+
 
 ## License
 
