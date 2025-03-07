@@ -2,12 +2,6 @@
 
 `useDraggableList` is a custom React hook that enables drag-and-drop functionality for lists.
 
-## Features
-
-- Easy to integrate
-- Lightweight
-- Customizable
-
 ## To run example project
 
 1. Install dependencies.
